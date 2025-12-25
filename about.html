@@ -236,6 +236,74 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
 
+
+/* Achievements Section */
+        .achievements {
+            padding: 6rem 2rem;
+            background: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .achievements-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .achievement-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .achievement-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .achievement-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .achievement-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
         /* Mission Vision Section */
         .mission-vision {
             padding: 6rem 2rem;
@@ -482,9 +550,10 @@
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="about.html#aim-objective">Mission & Vision</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html#aim-objective">Mission & Vision</a></li>
                 <li> <a href="contact_grain.html">Contact Us</a></li>
                 <li><a href="news.html" class="cta-btn">Events</a></li>
             </ul>
@@ -517,6 +586,37 @@
             </div>
             <div class="about-image">
                 <img src="assets/images/resource/about-7.png" alt="GRAIN Team">
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="section-title">
+            <h2>Our Achievements</h2>
+            <p>A glimpse of what we've accomplished so far at GRAIN</p>
+        </div>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <!--<div class="achievement-icon"></div>-->
+                <h3>Five-Day Technical Training</h3>
+                <p>Successfully organized comprehensive technical training under the DELite Project to promote experiential learning among students.</p>
+            </div>
+            <div class="achievement-card">
+                <!--<div class="achievement-icon"></div>-->
+                <h3>Electric Vehicle Project</h3>
+                <p>Secured a strategic collaboration with MOMAS on an innovative Electric Vehicle project advancing sustainable transportation.</p>
+            </div>
+            <div class="achievement-card">
+                <!--<div class="achievement-icon"></div>-->
+                <h3>Cashew Course Completion</h3>
+                <p>Completed specialized training on the ATINGI platform to enhance agribusiness knowledge and skills.</p>
+            </div>
+            <div class="achievement-card">
+                <!--<div class="achievement-icon"></div>-->
+                <h3>Strategic Partnerships</h3>
+                <p>Collaborated with NAAEE, Summit University, and DELitE to strengthen our mission and expand outreach.</p>
             </div>
         </div>
     </section>
