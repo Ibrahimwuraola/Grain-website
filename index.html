@@ -578,6 +578,64 @@
                 font-size: 2rem;
             }
         }
+
+
+
+        .yt-wrapper {
+  display: block;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.yt-player {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  background: #000;
+}
+
+.yt-thumbnail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yt-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+  transition: background .3s ease;
+}
+
+.yt-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  transition: transform .3s ease;
+}
+
+.yt-play-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.yt-player:hover .yt-overlay {
+  background: rgba(0,0,0,.15);
+}
+
+.yt-player:hover .yt-play-button {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+
+
     </style>
 </head>
 <body>
@@ -631,15 +689,49 @@
                 </div>
             </div>
 
-            <div class="hero-image">
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
-        <iframe src="https://www.instagram.com/reel/DJexyRBPYp8/?igsh=YzljYTk1ODg3Zg==" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+        <a href="https://youtu.be/yOMFthPhFnI" target="_blank" class="yt-wrapper">
+  <div class="yt-player">
+    <img
+      src="https://img.youtube.com/vi/yOMFthPhFnI/maxresdefault.jpg"
+      alt="YouTube video thumbnail"
+      class="yt-thumbnail"
+    />
+
+    <div class="yt-overlay"></div>
+
+    <div class="yt-play-button">
+      <svg viewBox="0 0 68 48">
+        <path d="M66.52 7.85a8 8 0 0 0-5.64-5.64C56.06 1 34 1 34 1S11.94 1 7.12 2.21a8 8 0 0 0-5.64 5.64C.27 12.67.27 24 .27 24s0 11.33 1.21 16.15a8 8 0 0 0 5.64 5.64C11.94 47 34 47 34 47s22.06 0 26.88-1.21a8 8 0 0 0 5.64-5.64C67.73 35.33 67.73 24 67.73 24s0-11.33-1.21-16.15z" fill="#f00"/>
+        <path d="M45 24 27 14v20z" fill="#fff"/>
+      </svg>
     </div>
-    <script async defer src="https://www.instagram.com/embed.js"></script>
-    </div>
-</div>
-</div>
-</section>
+  </div>
+</a>
+        </div>
+    </section>
+
+
+
+
+
+        <!--<a href="https://youtu.be/yOMFthPhFnI" target="_blank" style="display:block; position:relative;">
+  <img src="https://img.youtube.com/vi/yOMFthPhFnI/hqdefault.jpg"
+       style="width:100%; border-radius:20px;">
+  <span style="
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    font-size:60px;
+    color:white;">▶</span>
+</a>
+
+</section>-->
+
+
+
+
+
+
 
     <!-- Stats Section -->
     <!--<section class="stats">
